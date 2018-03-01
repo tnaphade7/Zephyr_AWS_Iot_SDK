@@ -30,10 +30,12 @@ extern "C" {
  * definition of the Timer struct. Platform specific
  */
  
-//struct Timer {								// c
-	//struct timeval end_time;
-//};
-
+							
+typedef struct {							// c
+	unsigned start_timestamp;
+	/* in milliseconds */
+	int timeout;
+} Timer;
 
 #ifdef __cplusplus
 }
